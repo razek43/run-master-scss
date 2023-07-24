@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: robo, sans-serif;
+  color: rgb(65, 65, 65);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* ::first-letter {
+  text-transform: uppercase;
+}
+* button, * #btn-submit {
+  background: none;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(182, 181, 181);
+  border-radius: 50px;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+* button:hover, * #btn-submit:hover {
+  color: rgb(127, 219, 255);
+  border: 1.5px solid rgb(127, 219, 255);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+* h2 {
+  font-weight: 100;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+div.text {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+div.text h1 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.img1 {
+  background: url(../img/banner.jpg) center/cover;
+}
+
+.img2 {
+  background: url(../img/img-left.jpg) center/cover;
+}
+
+.img3 {
+  background: url(../img/img-right.jpg) center/cover;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+div.forest-run {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+}
+
+div.city-run {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+}
+
+div.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  position: relative;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.178);
+}
+div.contact form {
+  min-width: 50%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "na ml" "ta ta" "bt bt";
+}
+div.contact form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+div.contact form div label {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+div.contact form div input {
+  border-radius: 3px;
+  border: 1px solid rgb(182, 181, 181);
+  height: 40px;
+  margin: 30px 5px;
+}
+div.contact form div textarea {
+  resize: none;
+  border: 1px solid rgb(182, 181, 181);
+  border-radius: 3px;
+  margin: 5px;
+}
+div.contact form .name {
+  grid-area: na;
+}
+div.contact form .email {
+  grid-area: ml;
+}
+div.contact form .message {
+  grid-area: ta;
+}
+div.contact form .btn-submit {
+  grid-area: bt;
+  width: 30%;
+  height: 50px;
+  margin: 5px auto;
+}
+div.contact::after {
+  content: "";
+  background: rgba(128, 128, 128, 0.342);
+  height: 1px;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100x;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px auto;
+  padding: 20px;
+  width: 40%;
+}
+footer div i {
+  border: 1px solid rgb(173, 173, 173);
+  padding: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer div i:hover {
+  color: rgb(127, 219, 255);
+  border: 1px solid rgb(127, 219, 255);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}/*# sourceMappingURL=index.css.map */
